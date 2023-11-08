@@ -91,7 +91,14 @@
                 var nextPlayerMove = playerMoves[playerMoves.length - 2];
                 var predictedMove = getPredictedMove(nextPlayerMove);
                 return getWinningMove(predictedMove);
-            }
+            function getPredictedMove(move) 
+            if (move === "rock") {
+                return "paper";
+            } else if (move === "paper") {
+                return "scissors";
+            } else {
+                return "rock";
+            } 
         }
        
         }
