@@ -75,9 +75,9 @@
             play("scissors");
         });
         function play(playerMove) {
-            playerMoves.push()(playerMove);
+            playerMoves array.push(playerMove);
             var computerMove = getComputerMove();
-            computerMoves.push()(computerMove);
+            computerMoves array.push(computerMove);
             var winner = getWinner(playerMove, computerMove);
             result.innerHTML = "You played <img src='Images/" + playerMove + ".png' alt='" + playerMove + "'>, and the computer played <img src='Images/" + computerMove + ".png' alt='" + computerMove + "'>. " + winner;
             score.innerHTML = "Player: " + playerScore + " | Computer: " + computerScore;
